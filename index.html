@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="Images/whole logo@4x.png">
+  <title>SYNERGIST | HOME</title>
+  <link rel="stylesheet" href="Css/style.css">
+  <!--bootstrap cdn links-->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body class="contact-main " style="background: url(Images/);">
+  <div id="preloader" class="center">
+    <div class="ring">
+      <span>
+        <img src="Images/whole logo@4x.png" alt="preload-img">
+      </span>
+    </div>
+  </div>
+  <nav class="container fixed-top">
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="Images/Alogo.png" alt="logo" width="210px"></a>
+        </div>
+        <div class="nav-links">
+            <div class="sidebar-logo">
+                <span class="logo-name"><img src="Images" alt="" width="220px"></span>
+                <i class='bx bx-x' id="close-menu"></i>
+            </div>
+            <ul class="links nav-animation">
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="about.html">ABOUT US</a>
+                    <i class='bx bxs-chevron-down htmlcss-arrow arrow' data-toggle="about-submenu"></i>
+                    <ul class="htmlCss-sub-menu sub-menu abt-nav" id="about-submenu">
+                        <li><a href="commitment.html">OUR COMMITMENT</a></li>
+                        <li><a href="profile.html">PROFILE</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">PRODUCTS</a>
+                    <i class='bx bxs-chevron-down htmlcss-arrow arrow' data-toggle="products-submenu"></i>
+                    <ul class="htmlCss-sub-menu sub-menu" id="products-submenu">
+                        <li class="more">
+                            <span>
+                                <a href="#">GENERAL INSURANCE</a>
+                                <i class='bx bxs-chevron-right arrow more-arrow' data-toggle="gi-submenu"></i>
+                            </span>
+                            <ul class="more-sub-menu sub-menu" id="gi-submenu">
+                                <li><a href="sme.html">SME-Commercial Combined</a></li>
+                                <li><a href="d&o.html">Directors & Officers Liability</a></li>
+                                <li><a href="cyber-insur.html" class="lh-sm p-1">Risk Managed Comprehensive<br>Cyber Insurance</a></li>
+                            </ul>
+                        </li>
+                        <li class="more">
+                            <span>
+                                <a href="reinsurance.html">REINSURANCE</a>
+                                <i class='bx bxs-chevron-right arrow more-arrow' data-toggle="re-submenu"></i>
+                            </span>
+                            <ul class="more-sub-menu sub-menu" id="re-submenu">
+                                <li><a href="reinsurance.html">Arrangements</a></li>
+                                <li><a href="reinsurance.html">Policies</a></li>
+                                <li><a href="reinsurance.html">Claims</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="claims.html">CLAIMS</a></li>
+                    </ul>
+                </li>
+                <li><a href="people.html">PEOPLE</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                <span class="ani-span"></span>
+                <button type="button" class="pop-mobile mt-3" data-toggle="modal" data-target="#myModal">Connect</button>
+            </ul>
+        </div>
+        <div class="search-box">
+            <i class='bx bx-menu' id="open-menu"><img src="Images/hamburger.png" alt="hamburger" width="30px"></i>
+        </div>
+    </div>
+    <button type="button" class="pop-up-btn mt-3 btn-donate" data-toggle="modal" data-target="#myModal">Connect</button>
+</nav>
+
+  <!--background video-->
+  <div class="video">
+    <video id="background-video" autoplay muted loop>
+      <source src="video/SI Banner-main.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="pop-up mt-5">
+    <div class="container mt-5">
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <img src="Images/Mlogo.png" alt="Modal Logo" width="220px">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <!-- Form for inputs -->
+              <form id="myForm" autocomplete="off">
+                <div class="form-group">
+                  <label for="input1">NAME</label>
+                  <input type="text" class="form-control" id="input1" placeholder="Enter Your Name" required>
+                </div>
+                <div class="form-group">
+                  <label for="input2">PHONE</label>
+                  <input type="text" class="form-control" id="input2" placeholder="Enter your Number" required>
+                </div>
+                <div class="form-group">
+                  <label for="inputEmail">Email</label>
+                  <input type="email" class="form-control" id="inputEmail" placeholder="Enter your Email" required>
+                </div>
+                <div class="form-group">
+                  <label for="productSelect">Products</label>
+                  <div class="select-custom">
+                    <select class="form-control" id="productSelect" name="product" required>
+                      <option value="">Select a Product</option>
+                      <option value="product1">SME-Commerical Combained</option>
+                      <option value="product2">Directors & Officers Lioability</option>
+                      <option value="product3">Risk Managed Comprehensive Cyber Insurance</option>
+                      <option value="product4">Re-Insurance</option>
+                      <!-- Add more <option> tags for additional products -->
+                    </select>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary" onclick="submitForm()">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container about-home mt-4 mb-5 pb-4">
+      <div class="row">
+        <div class="col-md-6 col-sm-12 col-lg-6 left-section">
+          <img src="Images/logo final@4x.png" alt="" class="logo-img">
+          <img src="Images/abt5.jpeg" alt="home-abt-img1" class="img-1" width="100%">
+          <div class="line-img">
+            <img src="Images/line-img-2.jpg" alt="background-line-img">
+          </div>
+          <div class="img-2">
+            <img src="Images/abt6.jpg" alt="home-abt-img2" width="100%">
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12 col-lg-6 right-section">
+          <h1>With Us</h1>
+          <span class="animate-border border-black mb-4"></span>
+          <h3>"Welcome to Synergist Insurance, your trusted partner in providing comprehensive insurance solutions"</h3>
+          <p class="para ">Established with a commitment to excellence and customer satisfaction, we are dedicated to
+            safeguarding your assets, health, and future with our innovative and reliable insurance products.</p>
+          <div class="row inner-right">
+            <div class="col-4 d-flex">
+              <div class=" "><i class="fa-brands fa-nfc-directional"></i></div>
+              <div class="icon">Personalized Approach</div>
+            </div>
+            <div class="col-4 d-flex">
+              <div class=" "><i class="fa-regular fa-life-ring"></i></div>
+              <div class=" icon">Specialized Expertise</div>
+            </div>
+            <div class="col-4  d-flex ">
+              <div class=""> <i class="fa-solid fa-circle-check"></i></div>
+              <div class=" icon">Dedicated Support</div>
+            </div>
+            <div class="right-text ps-5 mt-5 ">
+              <div class="col-12 me-4">
+                <h4> <i class="fa-regular fa-circle-check"></i> Talior Solution For Trade</h4>
+              </div>
+              <div class="col-12 mt-3">
+                <h4> <i class="fa-regular fa-circle-check"></i> Industry-Leading Expertise</h4>
+              </div>
+              <div class="col-12 mt-3">
+                <h4> <i class="fa-regular fa-circle-check"></i> Commitment To Client Success</h4>
+              </div>
+            </div>
+
+          </div>
+          <a href="about.html" class="text-decoration-none">
+            <button class="cta mt-4 ms-4">
+              <span class="span">Read More</span>
+              <span class="second">
+                <svg width="50px" height="20px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <path class="one"
+                      d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z"
+                      fill="#FFFFFF"></path>
+                    <path class="two"
+                      d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z"
+                      fill="#FFFFFF"></path>
+                    <path class="three"
+                      d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z"
+                      fill="#FFFFFF"></path>
+                  </g>
+                </svg>
+              </span>
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ start -->
+    <div class="container faq mt-5 mb-5">
+      <div class="row">
+        <h1 class="text-center mt-3">FAQ's</h1>
+        <div class="col-lg-6 col-sm-12 faq1">
+          <div class="qn1 mt-5 mb-3 ">
+            <button class="accordion">What types of insurance do you offer?</button>
+            <div class="panel">
+              <p>We offer a wide range of insurance products including life insurance, health insurance, auto insurance,
+                home insurance, and more.</p>
+            </div>
+          </div>
+          <div class="qn2 mt-1 mb-5">
+            <button class="accordion">What is the process for filing a claim?</button>
+            <div class="panel">
+              <p>To file a claim, you can contact our claims department either online or by phone. We'll guide you
+                through the process and assist you in providing all necessary documentation to process your claim
+                efficiently</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-sm-12">
+          <div class="qn3 mt-lg-5 mt-sm-0 mb-3">
+            <button class="accordion">What discounts or savings options are available?</button>
+            <div class="panel">
+              <p>We offer various discounts depending on the type of insurance you're interested in. These may include
+                discounts for bundling multiple policies, having a clean driving record, being a homeowner, and more.
+              </p>
+            </div>
+          </div>
+          <div class="qn4 mt-1 mb-5">
+            <button class="accordion">What factors affect insurance premiums?</button>
+            <div class="panel">
+              <p>Insurance premiums are typically determined by factors such as age, location, driving record, credit
+                history, coverage limits, and the type of coverage you choose. We'll assess these factors to provide you
+                with a personalized quote.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FAQ end -->
+    <!-- slider start -->
+    <div class="container mb-4 carousel">
+      <h2 class="text-center mt-3 mb-3">Why Choose Us ?</h2>
+      <div class=" slider">
+        <div class="slides">
+          <div class="slide">
+            <h2>Expertise</h2>
+            <p>With a team of experienced insurance professionals, we offer expert advice and tailored solutions to meet
+              your specific needs for SME, Directors and Officer and Cyber </p>
+          </div>
+          <div class="slide">
+            <h2>Customer Service</h2>
+            <p>We are committed to providing exceptional customer service, ensuring that your insurance needs are met
+              promptly and efficiently.</p>
+          </div>
+          <div class="slide">
+            <h2> Financial Stability</h2>
+            <p>Backed by strong financial reserves, we offer you the assurance that your claims will be settled promptly
+              and fairly.</p>
+          </div>
+          <div class="slide">
+            <h2> Flexibility</h2>
+            <p>Our policies are flexible, allowing you to add or remove covers as your business evolves.</p>
+          </div>
+          <div class="slide">
+            <h2>Customized Coverage</h2>
+            <p>Our policies are customized to meet the specific needs of your company, ensuring that you have the right
+              level of protection.</p>
+          </div>
+          <div class="slide">
+            <h2>Claims Handling</h2>
+            <p>Our dedicated claims team is available to assist you throughout the claims process, ensuring that your
+              claims are handled promptly and fairly.</p>
+          </div>
+          <div class="slide">
+            <h2>Risk Management</h2>
+            <p>We offer risk management services to help identify and mitigate risks, reducing the likelihood of claims
+              against directors and officers.</p>
+          </div>
+          <div class="slide">
+            <h2>Comprehensive Coverage</h2>
+            <p>Our policies are designed to provide broad coverage for a wide range of cyber risks, ensuring your
+              business is protected.</p>
+          </div>
+        </div>
+        <div class="navigation">
+          <span class="prev">&#10094;</span>
+          <span class="next">&#10095;</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer start -->
+    <div class="container-fluid footer">
+      <div class="row">
+        <div class="outer1">
+          <div class="col-lg-4 col-sm-12 col-md-4 outer">
+            <div class="mt-3 box1">
+              <div class="mt-1 me-4">
+                <a class=" icon"><i class="fa-solid fa-location-dot fa-2xl"></i></a>
+              </div>
+              <div class="">
+                <a href="https://maps.app.goo.gl/aU55e2kAVrsWi6kG9" class="text-decoration-none" target="_blank">
+                  <p class="text-center mt-1">OUR LOCATION <br> Anjouan</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-12 col-md-4 outer">
+            <div class="mt-3 box2">
+              <div class="mt-1 me-3 ">
+                <a class="icon"><i class="fa-solid fa-envelope fa-2xl"></i></a>
+              </div>
+              <div class="">
+                <a href="mailto:info@synergistinsuranceltd.com" class="text-decoration-none" target="_blank">
+                  <p class="text-center mt-1">EMAIL <br><span></span>info@synergistinsuranceltd.com</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-12 col-md-4 outer">
+            <div class="mt-3 box3">
+              <div class="mt-1 me-4">
+                <a class="icon"><i class="fa-solid fa-phone-volume fa-2xl"></i></a>
+              </div>
+              <div class="">
+                <a href="tel:+441223790623" class="text-decoration-none" target="_blank">
+                  <p class="text-center pt-1">CONTACT US <br> +441223790623</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- mobile design start -->
+      <div class="footerlogomobile col-sm-12">
+        <img src="Images/Mlogo.png" alt="" class="mt-4 mb-2">
+      </div>
+      <div class="boxmobile col-sm-12 mt-3">
+        <a><i class="fa-solid fa-map-location-dot fa-2xl me-5 ms-2 "></i> </a>
+        <a><i class="fa-solid fa-envelope fa-2xl me-5"></i></a>
+        <a><i class="fa-solid fa-phone fa-2xl "></i></a>
+      </div>
+      <div class="pagemobile mt-3 ms-3 col-sm-12">
+        <p class="me-4 ">Home</p>
+        <p class="me-4">Product</p>
+        <p class="me-4">Terms</p>
+        <p class="me-4">Privacy</p>
+      </div>
+      <div class="mediamobile">
+        <a class="btn btn-sm-square  text-white   social-icon faceb" href=""><i class="fa-brands fa-facebook-f"></i></a>
+        <a class="btn btn-sm-square  text-white   social-icon linked" href=""><i class="fa-brands fa-linkedin"></i></a>
+        <a class="btn btn-sm-square  text-white   social-icon twitter" href=""><i
+            class="fa-brands fa-x-twitter"></i></i></a>
+        <!-- <a class="btn btn-sm-square  text-white  mb-2   social-icon faceb" href=""><i class="fa-brands fa-square-instagram"></i></a> -->
+      </div>
+      <!-- mobile design end -->
+
+      <hr class="line">
+      <div class="row  main">
+        <div class="col-lg-4 col-sm-12 col-md-4 ms-5">
+          <img src="Images/Mlogo.png" alt="" class="mt-4 mb-2 footerlogo">
+          <p class="footercontent">At Synergist International, we are dedicated to providing our customers with
+            exceptional insurance solutions and unparalleled service. Our commitment to you is at the heart of
+            everything we do, guiding our actions and decisions every day.</p>
+        </div>
+        <div class="col-lg-3 col-sm-12 col-md-4">
+
+          <div class="mt-4 list">
+            <ul class="list1">
+              <h6 class="link1">Useful Links</h6>
+              <a href="" alt="">
+                <li>
+                  <i class="fa-solid fa-location-arrow fa-rotate-by me-1" style="--fa-rotate-angle: 45deg;"></i>
+                  Home
+                </li>
+              </a>
+              <a href="" alt="">
+                <li><i class="fa-solid fa-location-arrow fa-rotate-by me-1 " style="--fa-rotate-angle: 45deg;"></i>
+                  Products
+                </li>
+              </a>
+              <a href="">
+                <li><i class="fa-solid fa-location-arrow fa-rotate-by me-1 " style="--fa-rotate-angle: 45deg;"></i>
+                  People
+                </li>
+              </a>
+              <a href="">
+                <li><i class="fa-solid fa-location-arrow fa-rotate-by me-1" style="--fa-rotate-angle: 45deg;"></i>
+                  Contact
+                </li>
+              </a>
+            </ul>
+            <ul class="list1">
+              <h6>Links</h6>
+              <a href="terms &condition/Synergistermsandconditions.pdf" target="_blank">
+                <li><i class="fa-solid fa-location-arrow fa-rotate-by me-1" style="--fa-rotate-angle: 45deg;"></i>
+                  Terms
+                </li>
+              </a>
+              <a href="terms &condition/Synergistprivacypolicy.pdf" target="_blank">
+                <li><i class="fa-solid fa-location-arrow fa-rotate-by me-1 " style="--fa-rotate-angle: 45deg;"></i>
+                  Privacy
+                </li>
+              </a>
+            </ul>
+          </div>
+
+        </div>
+        <div class="col-lg-4 col-sm-12 col-md-3">
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d256863.45172632232!2d44.256319392931715!3d-12.232356635887527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18a035078cddd08d%3A0x36fc8fd292636421!2sNzwani%2C%20Comoros!5e0!3m2!1sen!2sin!4v1718107750241!5m2!1sen!2sin"
+              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="media mt-4">
+        <a href="" class="fbook"><i class="fa-brands fa-facebook-f"></i>Meta</a>
+        <a href="" class="twit"><i class="fa-brands fa-x-twitter"></i>X</a>
+        <a href="" class="linkin"><i class="fa-brands fa-linkedin"></i>Linkedin</a>
+      </div>
+    </div>
+    <div class="container-fluid part3">
+      <p class="copy"><span class="copyright">All Rights Reserved. &#169;2024</span></p>
+    </div>
+    <!--cookie start  -->
+    <div class="cookies">
+      This website collects cookies to deliver better user experience
+      <button class="accept">Accept</button>
+    </div>
+    <button id="scroll-top" onclick="scrollToTop()"><i class="fa-solid fa-angles-up"></i></button>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<!--Font Awesome links-->
+<script src="https://kit.fontawesome.com/8273228d1e.js" crossorigin="anonymous"></script>
+<!--Java script links-->
+<script src="js/main.js"></script>
+
+</html>
